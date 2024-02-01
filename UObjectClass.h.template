@@ -3,10 +3,11 @@
 #pragma once
 
 %BASE_CLASS_INCLUDE_DIRECTIVE%
+
 #include "%UNPREFIXED_CLASS_NAME%.generated.h"
 
 /**
- * %UNPREFIXED_CLASS_NAME%
+ * 
  */
 UCLASS(%UCLASS_SPECIFIER_LIST%)
 class %CLASS_MODULE_API_MACRO%%PREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLASS_NAME%
@@ -14,7 +15,6 @@ class %CLASS_MODULE_API_MACRO%%PREFIXED_CLASS_NAME% : public %PREFIXED_BASE_CLAS
 	GENERATED_BODY()
 
 public:
-	// Set Class Defaults
 	%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 	%CLASS_PROPERTIES%

@@ -2,11 +2,9 @@
 
 %MY_HEADER_INCLUDE_DIRECTIVE%
 
-// Set Class Defaults
 %PREFIXED_CLASS_NAME%::%PREFIXED_CLASS_NAME%(const FObjectInitializer& ObjectInitializer) 
 	: Super(ObjectInitializer)
 {
-	// For performance reasons, don't tick actors unless you really need to
 	PrimaryActorTick.bCanEverTick = false;
 	PrimaryActorTick.bStartWithTickEnabled = false;
 }
